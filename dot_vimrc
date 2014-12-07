@@ -6,7 +6,7 @@ set nocompatible " Disables vi compatible mode.
 set expandtab " Uses spaces when <Tab> is inserted.
 set tabstop=2 " Number of spaces in indenting.
 set shiftwidth=2 " Number of spaces when insert indent automatically.
-set softtabstop=0 
+set softtabstop=2 
 set textwidth=80 " Maximum text width.
 set hlsearch " Hihglights previous search results.
 set showmode " Shows the mode you're currently in.
@@ -16,6 +16,8 @@ set number " Sets line numbers.
 set title " Lets vim chnage may tab/window title.
 set clipboard+=unnamed "Yanks to the clipboard (Vim7.2).
 set autoread
+set autoindent
+set smartindent
 
 " For Mac delete characters by backspace key.
 set backspace=indent,eol,start
