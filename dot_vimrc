@@ -72,6 +72,9 @@ Bundle 'pangloss/vim-javascript'
 " Multiple replacing / inserting.
 Bundle 'terryma/vim-multiple-cursors'
 
+" Typescript syntax highlight
+Bundle 'othree/javascript-libraries-syntax.vim'
+
 
 " Indent setting
 augroup fileTypeIndent
