@@ -98,15 +98,15 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperborder',
-  'hypercwd',
-  'hyperlinks',
-  'hyperterm-tabs',
-  'hyperterm-blink',
-  'hyperterm-tab-icons',
-  'hyperterm-title',
-  'hyperterm-paste',
-      'hyperganymede'],
+  plugins: [
+    'hypercwd',
+    'hyperlinks',
+    'hyperterm-tabs',
+    'hyperterm-blink',
+    'hyperterm-tab-icons',
+    'hyperterm-title',
+    'hyperterm-paste',
+    'hyperganymede'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

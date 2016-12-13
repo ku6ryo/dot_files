@@ -1,3 +1,6 @@
+# header of each line
+export PS1='\W $ '
+
 #cat
 alias c='pygmentize -O style=monokai -f terminal256 -g -O encoding=utf-8'
 function cl() {
