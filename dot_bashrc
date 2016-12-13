@@ -1,0 +1,10 @@
+#cat
+alias c='pygmentize -O style=monokai -f terminal256 -g -O encoding=utf-8'
+function cl() {
+  c $1 | nl -n ln -b a
+}
+alias cl=cl
+
+# less
+export LESS='-R'
+export LESSOPEN='|~/shell/lessfilter %s'
