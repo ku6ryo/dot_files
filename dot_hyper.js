@@ -103,7 +103,6 @@ module.exports = {
     'hyperlinks',
     'hyperterm-tabs',
     'hyperterm-blink',
-    'hyperterm-tab-icons',
     'hyperterm-title',
     'hyperterm-paste',
     'hyperganymede'],
