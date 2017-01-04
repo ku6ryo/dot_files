@@ -72,12 +72,19 @@ Bundle 'pangloss/vim-javascript'
 " Multiple replacing / inserting.
 Bundle 'terryma/vim-multiple-cursors'
 
+" Typescript syntax highlighting
+Bundle 'leafgarland/typescript-vim'
+
 " Typescript syntax highlight
 Bundle 'othree/javascript-libraries-syntax.vim'
+
+" Comment out multiple lines at the same time.
+Bundle 'tomtom/tcomment_vim'
 
 
 " Indent setting
 augroup fileTypeIndent
   autocmd!
   autocmd BufNewFile,BufRead *.ino setlocal tabstop=4 softtabstop=4 shiftwidth=4
+  autocmd BufRead,BufNewFile *.ts set filetype=typescript
 augroup END
