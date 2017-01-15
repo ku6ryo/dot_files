@@ -5,7 +5,7 @@ alias l='ls -CFG'
 
 
 # header of each line
-export PS1='\e[1;29;104m[\W]\e[0m '
+export PS1='\[\e[1;29;104m\][\W]\[\e[0m\] '
 
 #cat
 alias c='pygmentize -O style=monokai -f terminal256 -g -O encoding=utf-8'
