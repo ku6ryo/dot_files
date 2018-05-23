@@ -45,26 +45,12 @@ if &t_Co > 1
   syntax enable
 endif
 
-" File search.
-"Bundle 'vim-scripts/FuzzyFinder'
-
-" FuzzyFinder depends on this.
-"Bundle 'clones/vim-l9'
-
-" vimshell depeds on vimproc and unite.
-Bundle 'Shougo/vimproc.git'
-Bundle 'Shougo/unite.vim.git'
-Bundle 'Shougo/vimshell.git'
-
 " Customizing of the status line.
 Bundle 'itchyny/lightline.vim'
 set laststatus=2 " Shows status line always.
 
 " Auto-completion.
 Bundle 'Valloric/YouCompleteMe.git'
-
-" Zencoding.
-Bundle 'mattn/zencoding-vim.git'
 
 " Javascript syntax highlighter.
 Bundle 'pangloss/vim-javascript'
