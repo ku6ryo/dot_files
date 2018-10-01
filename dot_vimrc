@@ -6,8 +6,7 @@ set nocompatible " Disables vi compatible mode.
 set expandtab " Uses spaces when <Tab> is inserted.
 set tabstop=2 " Number of spaces in indenting.
 set shiftwidth=2 " Number of spaces when insert indent automatically.
-set softtabstop=2 
-set textwidth=80 " Maximum text width.
+set softtabstop=2
 set hlsearch " Hihglights previous search results.
 set showmode " Shows the mode you're currently in.
 set showmatch " Shows matching braes / brakets.
@@ -49,11 +48,19 @@ endif
 Bundle 'itchyny/lightline.vim'
 set laststatus=2 " Shows status line always.
 
+" Show indent guideline
+Bundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=232
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=233
+
 " Auto-completion.
 Bundle 'Valloric/YouCompleteMe.git'
 
 " Javascript syntax highlighter.
 Bundle 'pangloss/vim-javascript'
+Bundle 'maxmellon/vim-jsx-pretty'
 
 " Multiple replacing / inserting.
 Bundle 'terryma/vim-multiple-cursors'
