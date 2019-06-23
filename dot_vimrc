@@ -2,6 +2,8 @@
 filetype off
 filetype plugin indent off
 
+set encoding=utf-8
+
 set nocompatible " Disables vi compatible mode.
 set expandtab " Uses spaces when <Tab> is inserted.
 set tabstop=2 " Number of spaces in indenting.
@@ -67,6 +69,7 @@ Bundle 'terryma/vim-multiple-cursors'
 
 " Typescript syntax highlighting
 Bundle 'leafgarland/typescript-vim'
+Bundle 'peitalin/vim-jsx-typescript'
 
 " Typescript syntax highlight
 Bundle 'othree/javascript-libraries-syntax.vim'
@@ -83,4 +86,6 @@ augroup fileTypeIndent
   autocmd!
   autocmd BufNewFile,BufRead *.ino setlocal tabstop=4 softtabstop=4 shiftwidth=4
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
+  " set filetypes as typescript.tsx
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 augroup END
